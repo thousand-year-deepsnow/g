@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+header {
+background-color: rgb(153, 194, 245);
+height: 250px;
+width: 100vw;
+position: relative;
+}   
+
+h1 {
+    font-size: 76px;
+    color: rgb(80, 80, 173, 0.687);
+    position: absolute;
+    left: 3vw;
+    top: 3vw;
+}
+
+header a {
+     color: rgb(80, 80, 173, 0.687);
+     font-size: 25px;
+     font-weight: 800;
+     position: absolute;
+     top: 180px;
+     right: 60px;
+     text-decoration: none;
+
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+header li {
+    display: inline;
+    margin-right: 14vw;
+}
+
+/* 通用按钮样式 */
+.image-button {
+    display: inline-block;       /* 使按钮并排显示 [[1]] */
+    width: 200px;                /* 按钮宽度（根据图片尺寸调整）*/
+    height: 150px;               /* 按钮高度 */
+    margin: 15vw 6vw;                /* 按钮间距 */
+    padding: 4vw;
+    cursor: pointer;             /* 鼠标悬停时显示手型指针 [[5, 18]] */
+    background-size: cover;      /* 确保图片完整覆盖按钮区域 [[11]] */
+
+}
+
+/* 为每个按钮设置独立样式 */
+#btn1 {
+    background-image: url('picture/灯左.jpg');  /* 初始状态图片 */
+}
+#btn1:hover {
+    background-image: url('picture/企鹅灯1.jpg');   /* 鼠标悬停时切换图片 [[1, 3]] */
+}
+
+#btn2 {
+    background-image: url('picture/灯中2.jpg');
+}
+#btn2:hover {
+    background-image: url('picture/企鹅灯1.jpg');
+}
+
+#btn3 {
+    background-image: url('picture/灯右.jpg');
+}
+#btn3:hover {
+    background-image: url('picture/企鹅灯1.jpg');
+}
+
+
+.image-button {
+    transition: transform 0.3s; 
+}
+.image-button:hover {
+    transform: scale(1.05);    
+}
+
+main {
+    background-color: aliceblue;
+    width: 100vw;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+    <h1>咕咕嘎嘎</h1>
+    <nav>
+        <a href="dudu.html">泥充Q币吗？</a>
+    </nav>
+</header>
+
+<main>
+<a href="ignore.html" class="image-button" id="btn1"></a>  
+<a href="ignore.html" class="image-button" id="btn2"></a>
+<a href="ignore.html" class="image-button" id="btn3"></a>
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
